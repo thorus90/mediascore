@@ -21,10 +21,6 @@ class MediascoresController extends AppController
         }
         $this->set('list',$this->Mediascore->find('all',array
         (
-            'conditions' => array
-            (
-                'user_id' => $id
-            ),
             'order' => 'id DESC',
             'recursive' => -1
         )));
