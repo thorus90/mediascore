@@ -1,3 +1,4 @@
 - user_id = 6 gilt natuerlich nicht immer
 - View add.ctp is broken
 - checkbox is misaligned
+- inserted_date anzeigen

@@ -21,7 +21,7 @@
         <li>
             <form action="/Mediascores/search/" method="post" class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" name="data[Mediascore][needle]" id="search" class="form-control" placeholder="Search">
+                    <input type="text" name="needle" id="search" class="form-control" placeholder="Search">
                 </div>
             </form>
         </li>

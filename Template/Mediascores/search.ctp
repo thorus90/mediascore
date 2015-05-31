@@ -18,18 +18,18 @@
                     ));
                 echo '</thead>';
                 echo '<tbody>';
-                    foreach ($list as $password)
+                    foreach ($list as $mediascore)
                     {
-                        if ( $password['Mediascore']['done_until'] == "0" )
+                        if ( $mediascore->done_until == "0" )
                         {
                             $done_until = $this->Html->image('check.png');
                         }
                         else
                         {
-                            $done_until = $password['Mediascore']['done_until'];
+                            $done_until = $mediascore->done_until;
                         }
                         
-                        if ( $password['Mediascore']['stored'] == "1" )
+                        if ( $mediascore->stored == "1" )
                         {
                             $stored = $this->Html->image('check.png');
                         }
@@ -40,11 +40,11 @@
 
                         echo $this->Html->tableCells(array(array
                         (
-                            $password['Mediascore']['id'],
-                            $password['Mediascore']['name_de'],
-                            $password['Mediascore']['name_en'],
-                            $password['Mediascore']['launch_year'],
-                            $password['Mediascore']['rate'],
+                            $mediascore->id,
+                            $mediascore->name_de,
+                            $mediascore->name_en,
+                            $mediascore->launch_year,
+                            $mediascore->rate,
                             $done_until,
                             $stored
                         )));
