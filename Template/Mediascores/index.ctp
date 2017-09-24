@@ -31,11 +31,11 @@
                         
                         if ( $mediascore->stored == "1" )
                         {
-                            $stored = $this->Html->image('check.png');
+                            $stored = $this->Html->image('check.png', [ 'alt' => 0 ]);
                         }
                         else
                         {
-                            $stored = $this->Html->image('cross.png');
+                            $stored = $this->Html->image('cross.png', [ 'alt' => 1 ]);
                         }
 
                         echo $this->Html->tableCells(array(array
