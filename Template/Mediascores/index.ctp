@@ -14,7 +14,8 @@
                         __('Year of Launch') . $following_icon,
                         __('Rating') . $following_icon,
                         __('Done') . $following_icon,
-                        __('Stored') . $following_icon
+                        __('Stored') . $following_icon,
+                        __('Type') . $following_icon
                     ));
                 echo '</thead>';
                 echo '<tbody>';
@@ -46,7 +47,8 @@
                             $mediascore->launch_year,
                             $mediascore->rate,
                             $done_until,
-                            $stored
+                            $stored,
+                            $mediascore->type
                         )));
                     }
                 echo '</tbody>';
