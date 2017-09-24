@@ -10,16 +10,16 @@ class MediascoresController extends AppController
 
     public $helpers = [
         'Html' => [
-            'className' => 'Bootstrap3.BootstrapHtml'
+            'className' => 'Bootstrap.BootstrapHtml'
         ],
         'Form' => [
-            'className' => 'Bootstrap3.BootstrapForm'
+            'className' => 'Bootstrap.BootstrapForm'
         ],
         'Paginator' => [
-            'className' => 'Bootstrap3.BootstrapPaginator'
+            'className' => 'Bootstrap.BootstrapPaginator'
         ],
         'Modal' => [
-            'className' => 'Bootstrap3.BootstrapModal'
+            'className' => 'Bootstrap.BootstrapModal'
         ]
     ];
 
